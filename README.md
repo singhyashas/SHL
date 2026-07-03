@@ -3,6 +3,27 @@
 FastAPI service for a stateless conversational recommender over the SHL
 Individual Test Solutions catalog.
 
+## Public Endpoint
+
+Deployed API base URL:
+
+```text
+https://assessment-recommender-dglg.onrender.com
+```
+
+Evaluator endpoints:
+
+```text
+GET  https://assessment-recommender-dglg.onrender.com/health
+POST https://assessment-recommender-dglg.onrender.com/chat
+```
+
+Interactive API docs:
+
+```text
+https://assessment-recommender-dglg.onrender.com/docs
+```
+
 ## Features
 
 - `GET /health` readiness endpoint
@@ -81,6 +102,12 @@ Chat:
 POST /chat
 ```
 
+Public URL:
+
+```text
+https://assessment-recommender-dglg.onrender.com/chat
+```
+
 Request:
 
 ```json
@@ -112,6 +139,22 @@ Response:
 
 `recommendations` is empty when the agent is clarifying, comparing, or refusing.
 
+Vague request example:
+
+```json
+{
+  "messages": [
+    {
+      "role": "user",
+      "content": "I need an assessment"
+    }
+  ]
+}
+```
+
+Expected behavior: the service asks a clarifying question, returns
+`"recommendations": []`, and keeps `"end_of_conversation": false`.
+
 ## Evaluation
 
 Run all tests:
@@ -140,3 +183,5 @@ uvicorn app.main:app --host 0.0.0.0 --port $PORT
 
 Render configuration is included in `render.yaml`. `Procfile` is included for
 platforms that use Heroku-style process declarations.
+
+No environment variables or private credentials are required.

@@ -9,6 +9,10 @@ compares, or returns a catalog-backed shortlist. I optimized first for hard
 evals: exact schema, no server-side conversation state, max 10 recommendations,
 and URLs only from the SHL catalog.
 
+The deployed API is available at
+`https://assessment-recommender-dglg.onrender.com`, with `/health` and `/chat`
+as the evaluator-facing endpoints.
+
 ## Catalog and Retrieval
 
 The pasted SHL product catalog is kept as `shl_product_catalog.json`. A
