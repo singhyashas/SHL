@@ -1,0 +1,29 @@
+{
+  "built_at": "2026-07-02T19:30:48.651596+00:00",
+  "source_file": "shl_product_catalog.json",
+  "source_count": 377,
+  "catalog_count": 377,
+  "category_counts": {
+    "Ability & Aptitude": 32,
+    "Assessment Exercises": 2,
+    "Biodata & Situational Judgment": 17,
+    "Competencies": 19,
+    "Development & 360": 7,
+    "Knowledge & Skills": 240,
+    "Personality & Behavior": 67,
+    "Simulations": 43
+  },
+  "test_type_counts": {
+    "A": 32,
+    "B": 17,
+    "C": 19,
+    "D": 7,
+    "E": 2,
+    "K": 240,
+    "P": 67,
+    "S": 43
+  },
+  "duration_known_count": 293,
+  "remote_testing_known_count": 377,
+  "adaptive_known_count": 377
+}

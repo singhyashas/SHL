@@ -1,0 +1,70 @@
+[
+  {
+    "id": "java_midlevel",
+    "description": "Mid-level Java developer assessment shortlist.",
+    "messages": [
+      {
+        "role": "user",
+        "content": "Hiring a mid-level Java developer with around 4 years of experience."
+      }
+    ],
+    "expected_recommendations": [
+      "Java 8 (New)",
+      "Core Java (Advanced Level) (New)",
+      "Core Java (Entry Level) (New)"
+    ]
+  },
+  {
+    "id": "java_refine_personality",
+    "description": "Refinement should keep Java context and add personality coverage.",
+    "messages": [
+      {
+        "role": "user",
+        "content": "Hiring a mid-level Java developer who works with business stakeholders."
+      },
+      {
+        "role": "assistant",
+        "content": "Here are some options."
+      },
+      {
+        "role": "user",
+        "content": "Actually add personality tests."
+      }
+    ],
+    "expected_recommendations": [
+      "Java 8 (New)",
+      "Core Java (Advanced Level) (New)",
+      "Occupational Personality Questionnaire OPQ32r"
+    ]
+  },
+  {
+    "id": "sales_service",
+    "description": "Sales and service role should retrieve sales/service catalog products.",
+    "messages": [
+      {
+        "role": "user",
+        "content": "I need assessments for a sales and service representative in a contact center."
+      }
+    ],
+    "expected_recommendations": [
+      "Sales & Service Phone Simulation",
+      "Sales & Service Phone Solution",
+      "Entry Level Sales Solution"
+    ]
+  },
+  {
+    "id": "aptitude_graduate",
+    "description": "Graduate cognitive aptitude scenario.",
+    "messages": [
+      {
+        "role": "user",
+        "content": "We are screening graduates and need cognitive aptitude or reasoning tests."
+      }
+    ],
+    "expected_recommendations": [
+      "Verify - G+",
+      "Verify - Numerical Ability",
+      "SHL Verify Interactive G+"
+    ]
+  }
+]
